@@ -15,16 +15,29 @@ String generateA000124(int n) {
   return sequence.join('-');
 }
 
+
+// //DINAMIS
+// void main() {
+//   stdout.write('Masukkan jumlah: ');
+//   String? input = stdin.readLineSync();
+
+//   int? n = int.tryParse(input ?? '');
+
+//   if (n == null) {
+//     print('Error: input harus berupa bilangan bulat.');
+//     return;
+//   }
+
+//   print('Output: ${generateA000124(n)}');
+// }
+
 void main() {
-  stdout.write('Masukkan jumlah: ');
-  String? input = stdin.readLineSync();
+  print('Input: 3');
+  print('Output: ${generateA000124(3)}');
 
-  int? n = int.tryParse(input ?? '');
+  print('Input: 5');
+  print('Output: ${generateA000124(5)}');
 
-  if (n == null) {
-    print('Error: input harus berupa bilangan bulat.');
-    return;
-  }
-
-  print('Output: ${generateA000124(n)}');
+  print('Input: 7');
+  print('Output: ${generateA000124(7)}');
 }

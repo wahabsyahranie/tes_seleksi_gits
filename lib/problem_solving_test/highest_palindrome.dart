@@ -104,19 +104,31 @@ String highestPalindrome(String s, int k) {
   return digits.join('');
 }
 
+// //DINAMIS
+// void main() {
+//   stdout.write('Masukkan anga: ');
+//   String s = stdin.readLineSync() ?? '';
+
+//   stdout.write('Masukkan jumlah perubahan (k): ');
+//   int? k = int.tryParse(stdin.readLineSync() ?? '');
+
+//   if (k == null) {
+//     print('output: -1');
+//     return;
+//   }
+
+//   String result = highestPalindrome(s, k);
+
+//   print('Output: $result');
+// }
+
 void main() {
-  stdout.write('Masukkan anga: ');
-  String s = stdin.readLineSync() ?? '';
+  print('Input: 3943, k: 1');
+  print('Output: ${highestPalindrome('3943', 1)}');
 
-  stdout.write('Masukkan jumlah perubahan (k): ');
-  int? k = int.tryParse(stdin.readLineSync() ?? '');
+  print('Input: 932239, k: 2');
+  print('Output: ${highestPalindrome('932239', 2)}');
 
-  if (k == null) {
-    print('output: -1');
-    return;
-  }
-
-  String result = highestPalindrome(s, k);
-
-  print('Output: $result');
+  print('Input: 1234, k: 1');
+  print('Output: ${highestPalindrome('1234', 1)}');
 }
